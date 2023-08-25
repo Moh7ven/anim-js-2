@@ -1,0 +1,88 @@
+body {
+  background-color: #19181a;
+}
+
+.title {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-decoration: 2px solid white;
+}
+
+.contain {
+  background-color: #828182;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 65rem;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-noir {
+  background-color: black;
+  width: 95%;
+  height: 93%;
+}
+
+.entre {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+}
+
+input {
+  height: 33px;
+  width: 17rem;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.bloc-carreau {
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.bloc-carreau div {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.carreau.active {
+  border: 2px solid gray;
+  animation: blank 1s 0s ease-in-out infinite;
+}
+
+@keyframes blank {
+  from {
+    border-color: rgba(0, 0, 255, 0);
+  }
+
+  to {
+    border-color: rgba(0, 0, 255, 1);
+  }
+}
